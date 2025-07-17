@@ -87,21 +87,30 @@ button {
     }
 }
 
-@media (max-width: 412px) {
+@media (min-width: 412px) {
+    h1{
+        font-size: 50px;
+    }
+
+    label {
+        font-size: 50px;
+    }
     #nameValue {
-        margin: 0 20px 17px 20px;
-        width: 300px;
+        /*margin: 0 20px 20px 0;*/
+        width: 90%;
+        height: 50px;
     }
 
     form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        background: white;
+        border-radius: 5px;
+        padding: 40px 40px 30px 30px;
+        margin: 0 auto;
+        width: 800px;
+        height: 1500px;
     }
 
     button {
-        padding: 5px;
         width: 300px;
     }
 
@@ -110,7 +119,6 @@ button {
     }
 
     p {
-        font-size: 30px;
         margin-top: 20px;
     }
 
