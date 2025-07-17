@@ -96,9 +96,10 @@ button {
         font-size: 50px;
     }
     #nameValue {
-        /*margin: 0 20px 20px 0;*/
-        width: 90%;
+        margin: 30px 20px 20px 0;
+        width: 100%;
         height: 50px;
+        font-size: 40px;
     }
 
     form {
@@ -109,9 +110,17 @@ button {
         width: 800px;
         height: 1500px;
     }
+    #list {
+        height: 600px;
+        width: 100%;
+        border: grey 1px solid;
+        padding-left: 10px;
+    }
 
     button {
-        width: 300px;
+        font-size: 40px;
+        width: 100%;
+        height: 60px;
     }
 
     input {
@@ -120,9 +129,12 @@ button {
 
     p {
         margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 50px;
     }
 
     .sortGroup {
         flex-direction: column;
     }
 }
+
