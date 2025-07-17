@@ -3,8 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style: none;
-}
+ }
 
 .wrapper {
     height: 100vh;
@@ -19,7 +18,7 @@ form {
     background: white;
     border-radius: 5px;
     padding: 40px 40px 30px 30px;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     width: 90%;
     height: 550px;
 }
@@ -46,9 +45,12 @@ label {
 }
 
 button {
+    cursor: pointer;
     padding: 3px;
     gap: 40px;
     width: 92px;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, white, #aeaeae);
 }
 
 .buttonAdd {
@@ -74,29 +76,148 @@ button {
     gap: 40px;
 }
 
-/*@media (min-width: 481px) and (max-width: 767px) {*/
-/*    form {*/
-/*        display: flex;*/
-/*        flex-direction: column;*/
-/*        justify-content: center;*/
-/*        align-items: center;*/
-/*    }*/
+@media (min-width: 1201px) and (max-width: 1530px) {
+    .wrapper {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 280px 0 280px ;
+        background: #752388;
+    }
 
-/*    button {*/
-/*        width: 300px;*/
-/*    }*/
+    form {
+        background: white;
+        border-radius: 5px;
+        height: 550px;
+    }
+}
 
-/*    input {*/
-/*        margin-right: 0;*/
-/*    }*/
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .wrapper {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 280px 0 280px ;
+        background: #23914f;
+    }
 
-/*    p {*/
-/*        margin-top: 20px;*/
-/*    }*/
+    form {
+        background: #f14848;
+        border-radius: 5px;
+        height: 550px;
+    }
 
-/*    .listGroup {*/
-/*        flex-direction: column;*/
-/*    }*/
-/*}*/
+    #list {
+        height: 36vh;
+        width: 70%;
+        border: grey 1px solid;
+        padding-left: 10px;
+    }
 
+}
 
+@media (min-width: 769px) and (max-width: 1224px) {
+    .wrapper {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 80px 0 80px ;
+        background: #23914f;
+    }
+
+    form {
+        background: #f1e348;
+        border-radius: 5px;
+        height: 550px;
+    }
+
+    #list {
+        height: 36vh;
+        width: 70%;
+        border: grey 1px solid;
+        padding-left: 10px;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .wrapper {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 80px 0 80px ;
+        background: #912377;
+    }
+
+    form {
+        background: #f1e348;
+        border-radius: 5px;
+        height: 550px;
+    }
+
+    #list {
+        height: 36vh;
+        width: 70%;
+        border: grey 1px solid;
+        padding-left: 10px;
+    }
+
+}
+
+@media (min-width: 480px) {
+    .wrapper {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 80px 0 80px ;
+        background: #23914f;
+    }
+
+    form {
+        background: #f1e348;
+        border-radius: 5px;
+        height: 80%;
+    }
+
+    h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 50px;
+    }
+
+    label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 50px;
+    }
+
+    #nameValue {
+        margin: 0 0 20px 0;
+        width: 100%;
+        height: 80px;
+        font-size: 50px;
+    }
+    .buttonAdd {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 40px;
+        padding: 2px 2px 2px 2px;
+        width: 45px;
+    }
+
+    #list {
+        height: 36vh;
+        width: 70%;
+        border: grey 1px solid;
+        padding-left: 10px;
+    }
+
+}
