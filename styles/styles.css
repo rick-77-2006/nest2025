@@ -1,3 +1,11 @@
+
+@media (min-width: 1201px) {
+
+:root {
+        --border-radius: 5px;
+        --background: linear-gradient(to bottom, white, #d8d5d5);
+    }
+
 * {
     margin: 0;
     padding: 0;
@@ -14,10 +22,11 @@
 
 form {
     background: white;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     padding: 40px 40px 30px 30px;
     margin: 0 auto;
-    width: 500px;
+    width: 700px;
+    height: 700px;
 }
 
 h1 {
@@ -26,7 +35,7 @@ h1 {
 
 #nameValue {
     margin: 0 20px 20px 0;
-    width: 300px;
+    width: 485px;
     height: 25px;
 }
 
@@ -35,92 +44,154 @@ label {
 }
 
 #list {
-    height: 250px;
-    width: 300px;
+    height: 480px;
+    width: 485px;
     border: grey 1px solid;
     padding-left: 10px;
 }
 
 button {
     padding: 3px;
-    gap: 40px;
+    background: var(--background);
+    border-radius: 5px;
+    width: 100px;
+}
+
+.deleteBtn {
+    margin-top: 15px;
+    width: 60px;
+    background: var(--background);
+    }
+
+.buttonAdd {
+    margin-left: 20px;
+    border-radius: var(--border-radius);
+    width: 50px;
 }
 
 .buttonGroup {
     display: flex;
     flex-direction: column;
     gap: 10px;
+
 }
 
 .sortGroup {
     display: flex;
     gap: 40px;
+    }
 }
 
-@media (min-width: 481px) and (max-width: 767px) {
-    #nameValue {
-        margin: 0 20px 17px 20px;
-        width: 300px;
-    }
-
-    form {
+@media (min-width: 768px) and (max-width: 1201px) {
+    .wrapper {
+        height: 100vh;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
         align-items: center;
-    }
-
-    button {
-        width: 300px;
-    }
-
-    input {
-        margin-right: 0;
-    }
-
-    p {
-        margin-top: 20px;
-    }
-
-    .sortGroup {
-        flex-direction: column;
-    }
-}
-
-@media (min-width: 412px) {
-    h1{
-        font-size: 50px;
-    }
-
-    label {
-        font-size: 50px;
-    }
-    #nameValue {
-        margin: 30px 20px 20px 0;
-        width: 100%;
-        height: 50px;
-        font-size: 40px;
+        background: #235a88;
     }
 
     form {
         background: white;
-        border-radius: 5px;
+        border-radius: var(--border-radius);
         padding: 40px 40px 30px 30px;
         margin: 0 auto;
-        width: 800px;
-        height: 1500px;
+        width: 600px;
+        height: 700px;
     }
+
+    #nameValue {
+        margin: 0 20px 20px 0;
+        width: 450px;
+        height: 25px;
+    }
+
+    label {
+        display: block;
+    }
+
     #list {
-        height: 600px;
-        width: 100%;
+        height: 480px;
+        width: 485px;
         border: grey 1px solid;
         padding-left: 10px;
     }
 
     button {
-        font-size: 40px;
+        padding: 3px;
+        background: var(--background);
+        border-radius: 5px;
+        width: 100px;
+    }
+
+    .deleteBtn {
+        margin-top: 15px;
+        width: 60px;
+        background: var(--background);
+    }
+
+    .buttonAdd {
+        margin-left: 20px;
+        border-radius: var(--border-radius);
+        width: 50px;
+    }
+
+    .buttonGroup {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+    .sortGroup {
+        display: flex;
+        gap: 40px;
+    }
+
+}
+
+@media (min-width: 413px) {
+    label {
+        font-size: 60px;
+    }
+
+    form {
+        margin: 0 40px 30px 40px;
+        width: 800px;
+        height: 90%;
+
+    }
+    .buttonAdd {
+        margin-left: 0;
+        border-radius: var(--border-radius);
         width: 100%;
-        height: 60px;
+        height: 80px;
+        font-size: 40px;
+    }
+
+    #list {
+        height: 480px;
+        width: 100%;
+        border: grey 1px solid;
+        padding-left: 10px;
+    }
+
+    .buttonGroup {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+
+    #nameValue {
+        margin: 0 0 30px 0;
+        /*margin: 0 20px 20px 0;*/
+        width: 100%;
+        height: 100px;
+    }
+
+    button {
+        width: 300px;
     }
 
     input {
@@ -129,12 +200,76 @@ button {
 
     p {
         margin-top: 20px;
-        margin-bottom: 20px;
-        font-size: 50px;
+    }
+
+    .listGroup {
+        flex-direction: column;
+    }
+    /*.wrapper {
+        height: 800px;
+        display: flex;
+        align-items: center;
+        background: #235a88;
+    }
+
+    form {
+        background: white;
+        border-radius: var(--border-radius);
+        padding: 40px 40px 30px 30px;
+        margin: 0 auto;
+        width: 600px;
+        height: 700px;
+    }
+
+    #nameValue {
+        margin: 1px 20px 20px 0;
+        width: 450px;
+        height: 25px;
+    }
+
+    label {
+        display: block;
+        font-size: 15px;
+    }
+
+    #list {
+        height: 480px;
+        width: 485px;
+        border: grey 1px solid;
+        padding-left: 9px;
+    }
+
+    button {
+        padding: 3px;
+        background: var(--background);
+        border-radius: 5px;
+        width: 99px;
+    }
+
+    .deleteBtn {
+        margin-top: 15px;
+        width: 59px;
+        background: var(--background);
+    }
+
+    .buttonAdd {
+        margin-left: 20px;
+        border-radius: var(--border-radius);
+        width: 50px;
+    }
+
+    .buttonGroup {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
     }
 
     .sortGroup {
-        flex-direction: column;
+        display: flex;
+        gap: 40px;
     }
+
+     */
 }
 

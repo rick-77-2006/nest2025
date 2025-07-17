@@ -9,19 +9,20 @@
 <div class="wrapper">
     <form name="form">
         <h1>Test</h1>
-        <label for="nameValue"> Name/value Pair</label>
-        <input type="text" name="nameValue" id="nameValue" placeholder="Enter Name=Value">
-        <button id="add">Add</button>
-        <p>Name/value Pair List</p>
+        <label for="nameValue"> Name/Value Pair</label>
+        <input type="text" name="nameValue" id="nameValue" placeholder="Name=Value">
+        <button class="buttonAdd" id="add">Add</button>
+        <p>Name/Value Pair List</p>
+
         <div class="sortGroup">
-            <div id="list">
+            <div id="list" >
                 <ul></ul>
             </div>
 
             <div class="buttonGroup">
-                <button id="sortByName">Sort by name</button>
+                <button id="sortByName">Sort by Name</button>
                 <button id="sortByValue">Sort by Value</button>
-                <button id="delete">Delete</button>
+                <button class="deleteBtn" id="delete">Delete</button>
             </div>
         </div>
 
