@@ -23,7 +23,7 @@ buttonAdd.addEventListener("click", () => {
         ul.appendChild(li);
         form.elements[`nameValue`].value = ''
     } else {
-        alert(`Error! Input data in format Name=Value NO Cyrillic or special characters`)
+        alert(`Error! Input data in format Name=Value`)
     }
 });
 

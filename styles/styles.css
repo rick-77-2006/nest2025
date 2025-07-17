@@ -1,11 +1,4 @@
 
-@media (min-width: 1201px) {
-
-:root {
-        --border-radius: 5px;
-        --background: linear-gradient(to bottom, white, #d8d5d5);
-    }
-
 * {
     margin: 0;
     padding: 0;
@@ -17,16 +10,18 @@
     height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin: 0 500px 0 500px;
     background: #235a88;
 }
 
 form {
     background: white;
-    border-radius: var(--border-radius);
+    border-radius: 5px;
     padding: 40px 40px 30px 30px;
     margin: 0 auto;
-    width: 700px;
-    height: 700px;
+    width: 90%;
+    height: 550px;
 }
 
 h1 {
@@ -34,8 +29,8 @@ h1 {
 }
 
 #nameValue {
-    margin: 0 20px 20px 0;
-    width: 485px;
+    margin: 0 0 20px 0;
+    width: 70%;
     height: 25px;
 }
 
@@ -44,232 +39,64 @@ label {
 }
 
 #list {
-    height: 480px;
-    width: 485px;
+    height: 36vh;
+    width: 70%;
     border: grey 1px solid;
     padding-left: 10px;
 }
 
 button {
     padding: 3px;
-    background: var(--background);
-    border-radius: 5px;
-    width: 100px;
+    gap: 40px;
+    width: 92px;
 }
 
-.deleteBtn {
-    margin-top: 15px;
-    width: 60px;
-    background: var(--background);
-    }
-
 .buttonAdd {
-    margin-left: 20px;
-    border-radius: var(--border-radius);
-    width: 50px;
+    margin-left: 40px;
+    padding: 2px 2px 2px 2px;
+    width: 45px;
 }
 
 .buttonGroup {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 80px;
+}
 
+.buttonDel {
+    width: 60px;
+    margin-top: 20px;
 }
 
 .sortGroup {
     display: flex;
     gap: 40px;
-    }
 }
 
-@media (min-width: 768px) and (max-width: 1201px) {
-    .wrapper {
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        background: #235a88;
-    }
+/*@media (min-width: 481px) and (max-width: 767px) {*/
+/*    form {*/
+/*        display: flex;*/
+/*        flex-direction: column;*/
+/*        justify-content: center;*/
+/*        align-items: center;*/
+/*    }*/
 
-    form {
-        background: white;
-        border-radius: var(--border-radius);
-        padding: 40px 40px 30px 30px;
-        margin: 0 auto;
-        width: 600px;
-        height: 700px;
-    }
+/*    button {*/
+/*        width: 300px;*/
+/*    }*/
 
-    #nameValue {
-        margin: 0 20px 20px 0;
-        width: 450px;
-        height: 25px;
-    }
+/*    input {*/
+/*        margin-right: 0;*/
+/*    }*/
 
-    label {
-        display: block;
-    }
+/*    p {*/
+/*        margin-top: 20px;*/
+/*    }*/
 
-    #list {
-        height: 480px;
-        width: 485px;
-        border: grey 1px solid;
-        padding-left: 10px;
-    }
+/*    .listGroup {*/
+/*        flex-direction: column;*/
+/*    }*/
+/*}*/
 
-    button {
-        padding: 3px;
-        background: var(--background);
-        border-radius: 5px;
-        width: 100px;
-    }
-
-    .deleteBtn {
-        margin-top: 15px;
-        width: 60px;
-        background: var(--background);
-    }
-
-    .buttonAdd {
-        margin-left: 20px;
-        border-radius: var(--border-radius);
-        width: 50px;
-    }
-
-    .buttonGroup {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-
-    }
-
-    .sortGroup {
-        display: flex;
-        gap: 40px;
-    }
-
-}
-
-@media (min-width: 413px) {
-    label {
-        font-size: 60px;
-    }
-
-    form {
-        margin: 0 40px 30px 40px;
-        width: 800px;
-        height: 90%;
-
-    }
-    .buttonAdd {
-        margin-left: 0;
-        border-radius: var(--border-radius);
-        width: 100%;
-        height: 80px;
-        font-size: 40px;
-    }
-
-    #list {
-        height: 480px;
-        width: 100%;
-        border: grey 1px solid;
-        padding-left: 10px;
-    }
-
-    .buttonGroup {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-
-
-    #nameValue {
-        margin: 0 0 30px 0;
-        /*margin: 0 20px 20px 0;*/
-        width: 100%;
-        height: 100px;
-    }
-
-    button {
-        width: 300px;
-    }
-
-    input {
-        margin-right: 0;
-    }
-
-    p {
-        margin-top: 20px;
-    }
-
-    .listGroup {
-        flex-direction: column;
-    }
-    /*.wrapper {
-        height: 800px;
-        display: flex;
-        align-items: center;
-        background: #235a88;
-    }
-
-    form {
-        background: white;
-        border-radius: var(--border-radius);
-        padding: 40px 40px 30px 30px;
-        margin: 0 auto;
-        width: 600px;
-        height: 700px;
-    }
-
-    #nameValue {
-        margin: 1px 20px 20px 0;
-        width: 450px;
-        height: 25px;
-    }
-
-    label {
-        display: block;
-        font-size: 15px;
-    }
-
-    #list {
-        height: 480px;
-        width: 485px;
-        border: grey 1px solid;
-        padding-left: 9px;
-    }
-
-    button {
-        padding: 3px;
-        background: var(--background);
-        border-radius: 5px;
-        width: 99px;
-    }
-
-    .deleteBtn {
-        margin-top: 15px;
-        width: 59px;
-        background: var(--background);
-    }
-
-    .buttonAdd {
-        margin-left: 20px;
-        border-radius: var(--border-radius);
-        width: 50px;
-    }
-
-    .buttonGroup {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-
-    }
-
-    .sortGroup {
-        display: flex;
-        gap: 40px;
-    }
-
-     */
-}
 
