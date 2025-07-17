@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: #235a88;
+}
+
+form {
+    background: white;
+    border-radius: 5px;
+    padding: 40px 40px 30px 30px;
+    margin: 0 auto;
+    width: 500px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#nameValue {
+    margin: 0 20px 20px 0;
+    width: 300px;
+    height: 25px;
+}
+
+label {
+    display: block;
+}
+
+#list {
+    height: 250px;
+    width: 300px;
+    border: grey 1px solid;
+    padding-left: 10px;
+}
+
+button {
+    padding: 3px;
+    gap: 40px;
+}
+
+.buttonGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sortGroup {
+    display: flex;
+    gap: 40px;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    #nameValue {
+        margin: 0 20px 17px 20px;
+        width: 300px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button {
+        width: 300px;
+    }
+
+    input {
+        margin-right: 0;
+    }
+
+    p {
+        margin-top: 20px;
+    }
+
+    .sortGroup {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 412px) {
+    #nameValue {
+        margin: 0 20px 17px 20px;
+        width: 300px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button {
+        padding: 5px;
+        width: 300px;
+    }
+
+    input {
+        margin-right: 0;
+    }
+
+    p {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    .sortGroup {
+        flex-direction: column;
+    }
+}
