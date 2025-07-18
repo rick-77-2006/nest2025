@@ -114,7 +114,6 @@ button {
         align-items: center;
         justify-content: center;
         margin: 0 280px 0 280px ;
-        background: #752388;
     }
 
     form {
@@ -131,11 +130,9 @@ button {
         align-items: center;
         justify-content: center;
         margin: 0 280px 0 280px ;
-        background: #23914f;
     }
 
     form {
-        background: #f14848;
         border-radius: 5px;
         height: 550px;
     }
@@ -156,11 +153,9 @@ button {
         align-items: center;
         justify-content: center;
         margin: 0 80px 0 80px ;
-        background: #23914f;
     }
 
     form {
-        background: #f1e348;
         border-radius: 5px;
         height: 550px;
     }
@@ -181,12 +176,10 @@ button {
         align-items: center;
         justify-content: center;
         margin: 0 80px 0 80px ;
-        background: #912377;
-    }
+     }
 
     form {
-        background: #f1e348;
-        border-radius: 5px;
+         border-radius: 5px;
         height: 550px;
     }
 
@@ -206,11 +199,10 @@ button {
         align-items: center;
         justify-content: center;
         margin: 0 0 0 0 ;
-        background: #23914f;
+
     }
 
     form {
-        background: #f1e348;
         border-radius: 5px;
         height: 100%;
     }
@@ -297,110 +289,6 @@ button {
         height: 60px;
         font-size: 40px;
         margin-top: 20px;
-    }
-
-
+   }
 }
 
-/*@media (min-width: 413px) {*/
-/*    .wrapper {*/
-/*        height: 99vh;*/
-/*        display: flex;*/
-/*        align-items: center;*/
-/*        justify-content: center;*/
-/*        margin: 0 0 0 0 ;*/
-/*        background: #23914f;*/
-/*    }*/
-
-/*    form {*/
-/*        background: #f1e348;*/
-/*        border-radius: 6px;*/
-/*        height: 100%;*/
-/*    }*/
-
-/*    h1 {*/
-/*        display: flex;*/
-/*        align-items: center;*/
-/*        justify-content: center;*/
-/*        font-size: 41px;*/
-/*        margin-bottom: 0;*/
-/*    }*/
-
-/*    label {*/
-/*        display: flex;*/
-/*        align-items: center;*/
-/*        justify-content: center;*/
-/*        font-size: 51px;*/
-/*    }*/
-
-/*    #nameValue {*/
-/*        margin: 0 0 20px 0;*/
-/*        width: 100%;*/
-/*        height: 81px;*/
-/*        font-size: 50px;*/
-/*    }*/
-
-/*    .buttonAdd {*/
-/*        display: flex;*/
-/*        align-items: center;*/
-/*        justify-content: center;*/
-/*        margin-left: 0;*/
-/*        padding: 0 0 0 0;*/
-/*        width: 100%;*/
-/*        height: 60px;*/
-/*        font-size: 51px;*/
-/*    }*/
-
-/*    p {*/
-/*        margin-top: 20px;*/
-/*        display: flex;*/
-/*        align-items: center;*/
-/*        justify-content: center;*/
-/*        font-size: 41px;*/
-/*    }*/
-
-/*    #list {*/
-/*        height: 36vh;*/
-/*        width: 100%;*/
-/*        border: grey 1px solid;*/
-/*        padding-left: 11px;*/
-/*    }*/
-
-/*    .buttonGroup {*/
-/*        display: flex;*/
-/*        flex-direction: column;*/
-/*        gap: 11px;*/
-/*        width: 100%;*/
-/*    }*/
-
-/*    .sortGroup {*/
-/*        gap: 41px;*/
-/*        display: inline;*/
-/*    }*/
-
-/*    .sort {*/
-/*        width: 37.2vh;*/
-/*        height: 60px;*/
-/*        padding: 3px;*/
-/*        font-size: 41px;*/
-/*        border-radius: 5px;*/
-/*        background-image: linear-gradient(to bottom, white, #aeaeae);*/
-/*    }*/
-
-/*    button {*/
-/*        cursor: pointer;*/
-/*        padding: 3px;*/
-/*        gap: 41px;*/
-/*        width: 100%;*/
-/*        border-radius: 5px;*/
-/*        background-image: linear-gradient(to bottom, white, #aeaeae);*/
-/*    }*/
-
-/*    .buttonDel {*/
-/*        width: 37.2vh;*/
-/*        height: 60px;*/
-/*        font-size: 40px;*/
-/*        margin-top: 20px;*/
-/*    }*/
-
-/*}*/
