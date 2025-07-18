@@ -27,6 +27,10 @@ h1 {
     margin-bottom: 20px;
 }
 
+.sub {
+    font-size: .5rem;
+}
+
 #nameValue {
     margin: 0 0 20px 0;
     width: 70%;
