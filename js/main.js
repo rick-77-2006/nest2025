@@ -1,3 +1,4 @@
+
 let form = document.forms[`form`];
 form.onsubmit = (e) => {
     e.preventDefault();
@@ -8,11 +9,9 @@ let buttonAdd = document.getElementById(`add`);
 let list = document.getElementById(`list`);
 let ul = list.getElementsByTagName('ul')[0];
 
-// button add
 buttonAdd.addEventListener("click", () => {
     let nameValue = form.elements[`nameValue`].value.trim();
     const regex = /^[a-zA-Z0-9]+\s*=\s*[a-zA-Z0-9]+$/;
-    // const regex = /^[a-zA-Zа-яА-ЯіІїЇєЄґҐ0-9]+\s*=\s*[a-zA-Zа-яА-ЯіІїЇєЄґҐ0-9]+$/;
     if (regex.test(nameValue)) {
         const [name, value] = nameValue.split(`=`);
         let pairItem = {name: name, value: value};
@@ -27,7 +26,6 @@ buttonAdd.addEventListener("click", () => {
     }
 });
 
-// sorting function
 function sortList(key) {
     pairList.sort((pair1, pair2) => {
         if (pair1[key] > pair2[key]) return 1
@@ -42,22 +40,22 @@ function sortList(key) {
     });
 }
 
-//button sort by name
 let buttonSortByName = document.getElementById(`sortByName`);
 buttonSortByName.addEventListener("click", () => {
     sortList(`name`);
 });
 
-//button sort by value
 let buttonSortByValue = document.getElementById(`sortByValue`);
 buttonSortByValue.addEventListener("click", () => {
     sortList(`value`);
 });
 
-// button delete
+
 let deleteAction = false;
 
 let buttonDelete = document.getElementById(`delete`);
+
+
 buttonDelete.addEventListener("click", () => {
     if (!deleteAction) {
         deleteAction = true;
@@ -68,17 +66,21 @@ buttonDelete.addEventListener("click", () => {
         }
     } else {
         deleteAction = false;
+        const toDelete = [];
         for (const li of ul.children) {
             let checkbox = li.querySelector("input[type='checkbox']");
             if (checkbox && checkbox.checked) {
-                let index = pairList.indexOf(checkbox);
+                const [name, value] = li.innerText.replace(/\s/g, '').split('=');
+                const index = pairList.findIndex(pair => pair.name === name && pair.value === value);
                 if (index !== -1) {
                     pairList.splice(index, 1);
                 }
-                li.remove();
-            } else {
-                checkbox.remove()
+                toDelete.push(li);
+            } else if (checkbox) {
+                checkbox.remove();
             }
         }
+        toDelete.forEach(li => li.remove());
     }
 });
+
