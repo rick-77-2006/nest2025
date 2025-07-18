@@ -28,7 +28,7 @@ h1 {
 }
 
 .sub {
-    font-size: .5rem;
+    font-size: 0.8rem;
 }
 
 #nameValue {
@@ -39,6 +39,11 @@ h1 {
 
 label {
     display: block;
+    font-size: 25px;
+}
+
+p {
+    font-size: 25px;
 }
 
 #list {
